@@ -71,6 +71,33 @@
     let lastName03 = 'Jackson';
     let name03 = firstName03 + " " + middleName03 + " " + lastName03;
     console.log(name03);
+
+    // Making a name with a middle initial
+    console.log("Making better name function:");
+    function makeBetterName(firstName, middleName, lastName) {
+      if (middleName.length === 1) {
+        middleName = middleName + ".";
+      }
+      let fullName = firstName + " " + middleName + " " + lastName;
+      return fullName;
+    }
+    console.log(makeBetterName("Joan", "Marie", "Larkin"));
+    console.log(makeBetterName("John", "F", "Kennedy"));
+    console.log(makeBetterName("George", "W", "Bush"));
+
+    console.log("scoreCompare function");
+    function scoreCompare(home, away) {
+      if (home > away) {
+        return "Home team wins!";
+      } else if (home === away) {
+        return "It was a tie"
+      } else {
+        return "Away team wins :("
+      }
+    }
+    console.log(scoreCompare(5,3));
+    console.log(scoreCompare(3,5));
+    console.log(scoreCompare(5,5));
   </script>
 </body>
 </html>
